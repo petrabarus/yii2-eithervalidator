@@ -6,7 +6,7 @@ Yii2 validator to force one of attributes to be filled.
 Add the following line to the composer.
 
 ```
-    "petrabarus/yii2-eithervalidator": "*"
+"petrabarus/yii2-eithervalidator": "*"
 ```
 
 ## Usage
@@ -14,5 +14,6 @@ Add the following line to the composer.
 Add the a line similar to the following to rule of the model
 
 ```php
-    [['email', PetraBarus\Yii2\Validators\EitherValidator::class, 'otherAttributes' => ['phone']]
+[['email'], PetraBarus\Yii2\Validators\EitherValidator::class, 
+	'otherAttributes' => ['phone']]
 ```
